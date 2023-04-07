@@ -23,7 +23,6 @@ io.on('connection', (socket) => {
   socket.on('join', ({ name, room }) => {
     socket.join(room);
 
-    console.log(socket);
     // Проверка на регистрацию 
     const { user } = addUser({ name, room });
 
